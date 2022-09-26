@@ -1,0 +1,1 @@
+Feb 5 Lecture copy constructor, this pointer variable, operator overloading syntax, operator overloading function call, difference between copy constructor and =operator

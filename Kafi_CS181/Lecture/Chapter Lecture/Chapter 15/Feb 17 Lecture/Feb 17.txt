@@ -1,0 +1,1 @@
+Feb 17 Lecture aggregation (has a relationship), aggregation uml, cin and cout operator overloading, inheritance (is a relationship), protected access specifier, resource access policy in the derived class

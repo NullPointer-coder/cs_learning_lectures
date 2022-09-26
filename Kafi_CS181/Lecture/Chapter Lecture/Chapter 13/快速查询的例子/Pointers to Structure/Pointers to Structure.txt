@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Movie
+{
+     string title;
+     string director;
+     unsigned year_released;
+     double running_time;
+};
+
+int main()
+{
+    Movie movie {"Psycho", "Hitchcock", 1960, 1.82};
+    Movie* mptr = &movie;
+    cout << (*mptr).title << endl;
+    cout << mptr->title;
+
+    return 0;
+}

@@ -1,0 +1,61 @@
+class Student
+{
+    private:
+        int student_ID;
+        string * student_name;
+    public:
+        Student(int id, string * name)
+        { 
+            student_ID = id;
+            student_name = new string;
+            *student_name = *name;
+        }
+        ~Student()
+        {
+            delete student_name;
+        }
+};
+
+
+——————————————————————————————————————————————————————————
+
+template <class T>
+class Storage
+{
+    private:
+        T *array;
+        int size;
+public:
+       /* basic constructor */
+       Storage(int length);
+
+       /* destructor */
+      ~Storage();
+};
+
+template <class T>
+Storage<T> :: Storage(int length)
+{
+  size = length;
+  // Allocate memory
+  if(length <= 0)
+  {
+    throw "ERROR: Cannot allocate memory.";
+    exit(EXIT_FAILURE);
+  }
+  array = new T [length];
+
+  // Initialize array
+  for(size_t i = 0; i < size; i++)
+  {
+    array[i] = T();
+  }
+}
+
+template <class T>
+Storage<T> :: ~Storage()
+{
+  // release all the allocated memory
+  delete[] array;
+  cout << endl << endl << "Deleting all the array elements ..." << endl;
+}

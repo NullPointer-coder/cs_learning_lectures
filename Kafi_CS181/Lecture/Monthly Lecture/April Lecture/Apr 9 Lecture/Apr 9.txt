@@ -1,0 +1,1 @@
+Apr 9 Lecture algorithms for set operations, function objects, predicate, lambda expressions, reading guidelines for chapter 17

@@ -1,0 +1,1 @@
+March 1 Lecture opening a binary file, read and write functions, how to readwrite non-char data, readwrite objects, navigating the file by using seekgseekptellptellg functions

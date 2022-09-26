@@ -1,0 +1,2 @@
+Feb 26 Lecture file open modes, validating input file, fstream object, iosiniosout flags, formatting file output, passing file variables as parameters, error bitstesting, modified getline function, getput functions, multiple files, append file iosapp flag
+  

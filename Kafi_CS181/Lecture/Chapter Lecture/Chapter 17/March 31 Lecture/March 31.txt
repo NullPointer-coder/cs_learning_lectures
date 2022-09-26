@@ -1,0 +1,2 @@
+Mar 31 Lecture:  STL algorithm, sort, binary_search, is_permutation, for_each, count_if, copy
+ 

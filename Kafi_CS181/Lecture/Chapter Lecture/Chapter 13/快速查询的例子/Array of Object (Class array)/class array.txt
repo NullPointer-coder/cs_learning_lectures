@@ -1,0 +1,3 @@
+InventoryItem inventory[3] = {InventoryItem("ABC", 6.33,12),
+                              InventoryItem("BCD", 7.34,13),
+                              InventoryItem("CDE", 8.33,14) };

@@ -1,0 +1,1 @@
+March 24 Lecture mutable iterators, constant iterators, reverse iterators, vector class functions, iterator with vector variables, insert functions, emplace functions

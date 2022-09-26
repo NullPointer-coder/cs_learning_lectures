@@ -1,0 +1,2 @@
+Jan 29 Lecture comparing two objects, UML syntax, compare POP and OOP, reading guide chapter 13, instance vs static variables, static variable syntax, static member function
+  

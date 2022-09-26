@@ -1,0 +1,1 @@
+March 17 Lecture multiple exception by type, default catch block, handling and correcting error with exception, nested try blocks, exceptions with objects, built in exception classbad_alloc, logic_error, runtime_error, what function, extending exception class, function templates

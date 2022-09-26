@@ -1,0 +1,40 @@
+#include iostream
+#include string
+
+using namespace std;
+
+struct Movie
+{
+     string title;
+     string director;
+     unsigned year_released;
+     double running_time;
+    
+};
+
+string to_string(const Movie& m)
+     {
+        unsigned hours = static_castunsigned(m.running_time);
+        unsigned minutes = static_castunsigned((m.running_time -hours) 60); 
+        string result = m.title + ;  + m.director +  ( 
+                        + std to_string(m.year_released) + )  
+                        + std to_string(hours) +  hr  
+                        + std to_string(minutes) +  min.; 
+     
+        return result;
+     }
+
+int main()
+{
+    Movie mptr = new Movie;
+    
+    mptr -> title = Psycho;
+    mptr -> director = Hitchcock;
+    mptr -> year_released = 1960;
+    mptr -> running_time = 1.82;
+    
+    cout <<  to_string(mptr) <<  endl;
+    delete mptr;
+
+    return 0;
+}

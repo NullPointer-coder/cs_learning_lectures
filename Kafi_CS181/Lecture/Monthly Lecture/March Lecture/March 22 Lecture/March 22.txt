@@ -1,0 +1,1 @@
+Mar 22 Lecture STL motivation, containers sequenceassociative, array class template declarationinitializationloop, iterators, iterators vs pointers, define iterators, navigating array container using iterator, beginend functions, iterator with auto keyword, mutable iterator

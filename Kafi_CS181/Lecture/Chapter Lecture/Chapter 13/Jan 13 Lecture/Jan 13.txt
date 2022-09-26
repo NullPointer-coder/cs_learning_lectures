@@ -1,0 +1,1 @@
+Jan 13 Lecture:  revising structure ADT, declaration, initialization, pointer of structure variable, dereference and select operator, nested structure, to_string function

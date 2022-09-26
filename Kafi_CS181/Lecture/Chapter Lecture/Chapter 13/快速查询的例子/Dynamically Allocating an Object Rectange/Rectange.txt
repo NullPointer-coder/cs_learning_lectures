@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+class Rectangle
+{
+    private:
+        double width;
+    public:
+        void setWidth(double w)
+        { width = w; }
+        double getWidth() const
+        { return width; }
+};
+
+int main()
+{
+    Rectangle *rPtr;
+    rPtr = new Rectangle;
+    
+    rPtr -> setWidth(10.0);
+    
+    cout << rPtr->getWidth();
+
+    delete rPtr;
+
+    return 0;
+}

@@ -1,0 +1,1 @@
+Apr 12 Lecture Linked list ADT, Linked list vs arrayvector, node, head pointer, recognizing the last node, empty list, node declaration, new node, appending a node, traversing a linked list, inserting a node (depiction)

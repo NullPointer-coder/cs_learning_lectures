@@ -1,0 +1,2 @@
+Apr 14 Lecture inserting a node in the linked list, deleting a node, deleting all nodes, template based linked list, ideadoubly linked list, circular linked list, STL class list, forward list classes and the member functions
+  

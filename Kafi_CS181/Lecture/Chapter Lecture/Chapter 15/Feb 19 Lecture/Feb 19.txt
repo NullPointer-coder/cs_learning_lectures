@@ -1,0 +1,1 @@
+Feb 19 Lecture protected access specifier, inheritance using publicprotectedprivate, constructor in basederived class, passing argument to base class constructor, inheriting base class constructors, hierarchical inheritance

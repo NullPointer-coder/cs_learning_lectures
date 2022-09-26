@@ -1,0 +1,1 @@
+Apr 20 Lecture dynamic stack push an element, dynamic template stack, STL stack container, Queue ADT, int Queue program
