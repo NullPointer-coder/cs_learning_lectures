@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AJAX Example</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jon Beck" />
+    <link href="selectword.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <p>Select A Word</p>
+    </header>
+    <section id="search-sec">
+      <p>
+        <label for="wordsearch">Search: </label>
+        <input type="text" id="wordsearch" autofocus />
+      </p>
+    </section>
+
+    <section id="results-sec">
+      <div id="search_results">
+      </div>
+    </section>
+
+    <section id="choose-sec">
+      <button id="choosebutton">Select Word</button>
+    </section>
+
+    <section id="report-sec" class="hidden">
+      <p>
+        You chose <span id="word"></span> of
+        type <span id="part"></span>.
+      </p>
+    </section>
+
+    <script src="selectword.js"></script>
+  </body>
+</html>

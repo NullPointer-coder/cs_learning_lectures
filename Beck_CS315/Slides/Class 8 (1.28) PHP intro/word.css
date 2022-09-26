@@ -1,0 +1,22 @@
+body
+{
+  padding: 1em;
+  font-family: sans-serif;
+}
+
+h1
+{
+  text-align: center;
+  font-size: larger;
+}
+
+dt
+{
+  font-weight: bold;
+}
+
+.partofspeech
+{
+  font-style: italic;
+}
+

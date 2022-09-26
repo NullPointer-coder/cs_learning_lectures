@@ -1,0 +1,29 @@
+/*
+  style for the "rick" example in class 20
+  Jon Beck
+*/
+
+body
+{
+    margin-left: 25px;
+    font-family: sans-serif;
+}
+
+#lyrics
+{
+    border: 1px solid black;
+}
+
+#lyrics > p
+{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+input[type="radio"], input[type="checkbox"]
+{
+  margin-right: 2em;
+}

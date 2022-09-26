@@ -1,0 +1,21 @@
+body
+{
+  width: 700px;
+  margin-left: 30px;
+  font-family: sans-serif;
+}
+
+.re
+{
+  font-family: monospace;
+}
+
+.spaced > li
+{
+  margin-top: 15px;
+}
+
+li.re
+{
+  list-style-type: lower-alpha;
+}

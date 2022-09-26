@@ -1,0 +1,39 @@
+/*
+ * styling for sending JSON
+ * @author Jon Beck
+ * @version 21 March 2022
+ */
+
+body
+{
+  font-family: sans-serif;  
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid black;
+}
+
+header
+{
+  margin: 1em;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#send-sec
+{
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#send-sec p
+{
+  text-align: center;
+}

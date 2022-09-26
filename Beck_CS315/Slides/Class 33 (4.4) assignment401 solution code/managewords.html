@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manage Words</title>
+    <meta name="author" content="Jon Beck" />
+    <link href="managewords.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="mainpage">
+      <h1>Manage the Word List</h1>
+      <section id="add-word-sec">
+        <h1>Add a Word</h1>
+        <p>
+          <label for="new-word">Word: </label>
+          <input type="text" id="new-word" />
+        </p>
+        <p>
+          <label for="part">Part: </label>
+          <select id="part">
+            <option value="" id="null-selection" selected>
+              Select a Part of Speech
+            </option>
+            <option value="adjective">Adjective</option>
+            <option value="adverb">Adverb</option>
+            <option value="noun">Noun</option>
+            <option value="verb">Verb</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="new-defn">Definition: </label>
+          <input type="text" id="new-defn" />
+        </p>
+
+        <p>
+          <button id="new-submit" disabled>Add</button>
+        </p>
+
+      </section>
+      <section id="view-words-sec">
+        <h1>View Words</h1>
+        <div id="words-grid"></div>
+      </section>
+      <footer></footer>
+    </div>
+    <script src="managewords.js"></script>
+  </body>
+</html>

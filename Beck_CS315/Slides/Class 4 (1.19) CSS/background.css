@@ -1,0 +1,15 @@
+/* Jon Beck */
+
+body
+{
+  margin-left: 100px;
+  margin-right: 100px;
+  background-image: url(skullxb.png);
+  background-repeat: no-repeat;
+}
+
+
+#type2
+{
+  background-color: red;
+}

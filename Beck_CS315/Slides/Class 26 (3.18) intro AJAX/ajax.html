@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AJAX Example</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jon Beck" />
+    <link href="c26.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>An Ajax Request</h1>
+
+    <p>Click the color buttons and see that the page is still active</p>
+
+    <textarea rows="5" cols="30"
+       id="poembox" readonly>Watch for this to change</textarea>
+
+    <p>
+      <button id="load-xhr">Load With XHR</button>
+    </p>
+
+    <p>
+      <button id="load-promise">Load With Promise</button>
+    </p>
+
+    <p>
+      <button id="clear">Clear Textarea</button>
+    </p>
+
+    <p id="colorme">
+      The following buttons change my color.
+    </p>
+
+    <p>
+      <button id="redbutton">Red</button>
+      <button id="bluebutton">Blue</button>
+    </p>
+
+    <script src="ajax.js"></script>
+  </body>
+</html>

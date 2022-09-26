@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Owen" />
+    <title>Report an Abduction</title>
+    <link rel="stylesheet" href="reportform.css" />
+  </head>
+
+  <body>
+    <h1>Aliens Abducted Me</h1>
+    <h2>Report an Abduction</h2>
+
+    <p>Share your story of alien abduction by filling out the fields below.</p>
+
+    <form method="post" action="processform.php">
+
+      <p id="fang_image">
+        <img src="fang.jpeg" alt="My missing dog Fang." />
+      </p>
+
+      <p>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" required />
+      </p>
+
+      <p>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" />
+      </p>
+
+      <p>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" />
+      </p>
+
+      <p>
+        <label for="whenithappened">When did it happen?</label>
+        <input type="date" id="whenithappened" name="whenithappened" />
+      </p>
+
+      <p>
+        <label for="howlong">How many days were you gone?</label>
+        <input type="number" id="howlong" name="howlong" min="1"
+        max="500" />
+      </p>
+
+      <p>
+        <label for="howmany">How many aliens did you see?</label>
+        <input type="number" id="howmany" name="howmany" />
+      </p>
+
+      <p>
+        <label for="eyecolor">What was their eye color?</label>
+        <input type="color" id="eyecolor" name="eyecolor" />
+      </p>
+
+      <p>
+        <label for="whattheydid">What did they do to you?</label>
+        <input type="text" id="whattheydid" name="whattheydid" size="32" />
+      </p>
+
+      <div id="yesno_grid">
+        <div id="gridlabel">
+          Did you see my dog Fang?
+        </div>
+
+        <div>
+          <fieldset>
+            <label class="yesno_label" for="spottedyes">Yes</label>
+            <input id="spottedyes" name="spotted" type="radio"
+                   value="yes" />
+            <br />
+
+            <label class="yesno_label" for="spottedno">No</label>
+            <input id="spottedno" name="spotted" type="radio"
+                   value="no" />
+          </fieldset>
+        </div>
+      </div>
+
+      <p>
+        <label for="other">Anything else you want to add?</label>
+        <textarea id="other" name="other"
+          placeholder="Add comments here"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Submit Report" name="submit" />
+      </p>
+    </form>
+  </body>
+</html>

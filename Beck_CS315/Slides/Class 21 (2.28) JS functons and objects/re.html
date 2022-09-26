@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RE Examples</title>
+  </head>
+
+  <body>
+    <h1>RE Examples</h1>
+
+    <script>
+      const string = "The quick brown fox";
+      const re = /\bB\w+/i;
+      console.log(re.test(string));
+      console.log(re.test("jumped over the lazy dog."));
+
+
+      const poem = "Roses are red, violets are blue";
+      console.log(poem.search(re));
+      console.log(poem.replace(re, "cool"));
+    </script>
+  </body>
+</html>

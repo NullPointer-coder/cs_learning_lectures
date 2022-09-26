@@ -1,0 +1,53 @@
+/*
+  style for class 17
+  Jon Beck
+
+  Note: naming classes by appearance is generally not good style.
+  Done here for a specific illustration.
+*/
+
+body
+{
+  font-family: sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid black;
+}
+
+.red
+{
+  color: red;
+}
+
+.orange
+{
+  color: orange;
+}
+
+.black
+{
+  color: black;
+}
+
+.green
+{
+  color: green;
+}
+
+.blue
+{
+  color: blue;
+}
+
+.indigo
+{
+  color: indigo;
+}
+
+.violet
+{
+  color: violet;
+}

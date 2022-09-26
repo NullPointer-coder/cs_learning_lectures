@@ -1,0 +1,58 @@
+/*
+  Jon Beck
+*/
+
+body
+{
+  width: 80%;
+  margin-left: 5em;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+
+label
+{
+  display: inline-block;
+  width: 340px;
+  font-weight: bold;
+}
+
+.label
+{
+  font-weight: bold;
+}
+
+.yesno_label
+{
+  width: 64px;
+}
+
+#yesno_grid
+{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 340px auto;
+}
+
+#gridlabel
+{
+  font-weight: bold;
+  align-self: center;
+}
+
+fieldset
+{
+  width: 100px;
+}
+
+#fang_image
+{
+  float: right;
+  width: 150px;
+  height: 125px;
+}
+
+textarea
+{
+  vertical-align: top;
+}

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>World Adventure Recommender</title>
+    <link href="adventure.css" rel="stylesheet" />
+    <meta charset="utf8" />
+    <meta name="author" content="Jon Beck" />
+  </head>
+
+  <body>
+    <header>
+      <h1>World Adventure Recommender</h1>
+    </header>
+
+    <h2>Choose the characteristics of a country to visit</h2>
+
+    <div id="contdiv">
+      <p>Which continent do you prefer?</p>
+      <select id="continent_select" name="continent_select" size="5">
+      </select>
+      <div id="selected_continent" class="hidden"></div>
+    </div>
+
+    <div id="langdiv" class="hidden">
+      <p>Now tell me which language(s) you want</p>
+      <select id="lang_select" size="5" multiple>
+      </select>
+    </div>
+
+    <div id="submitdiv" class="hidden">
+      <button id="get_countries_button" disabled>
+        Find Your Countries!
+      </button>
+    </div>
+
+    <div id="countriesdiv" class="hidden">
+      <ul id="countrylist">
+      </ul>
+
+      <p><button id="again_button">Again!</button></p>
+    </div>
+
+    <script src="adventure.js"></script>
+  </body>
+</html>

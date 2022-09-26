@@ -1,0 +1,38 @@
+body
+{
+  font-family: sans-serif;
+  margin:  20px;
+}
+
+.outside
+{
+  border: 2px solid;
+  margin: 10px;
+  padding: 10px;
+  background-color: tan;
+}
+
+#outside
+{
+  position: absolute;
+  width: 200px;
+  right: 50px;
+  bottom: 50px;
+  z-index: -1;
+}
+
+.inside
+{
+  border: 1px dotted;
+  margin: 5px;
+  padding: 5px;
+  background-color: pink;
+}
+
+#inside
+{
+  position: absolute;
+  width: 50px;
+  left: 10px;
+  top: -10px;
+}

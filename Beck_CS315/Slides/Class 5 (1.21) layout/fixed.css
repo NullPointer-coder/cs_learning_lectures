@@ -1,0 +1,15 @@
+body
+{
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+#stuck
+{
+  background-color: rgba(255, 0, 0, 0.15);
+  border: 1px solid black;
+  position: fixed;
+  width: 100px;
+  left: 50px;
+  top: 75px;
+}

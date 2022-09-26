@@ -1,0 +1,122 @@
+/*
+   Jon Beck
+*/
+
+h1
+{
+  font-size: large;
+}
+
+header
+{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+body
+{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.partofspeech
+{
+  font-style: italic;
+}
+
+.visible
+{
+  display: block;
+}
+
+.invisible
+{
+  display: none;
+}
+
+#choose-action
+{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#choose-action p
+{
+  justify-self: center;
+  text-align: center;
+}
+
+#add-section
+{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 5fr;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#part-select
+{
+  min-width: 15ch;
+  max-width: 15ch;
+}
+
+#word-text
+{
+  min-width: 15ch;
+  max-width: 15ch;
+}
+
+#add-submit
+{
+  grid-column: 2/3;
+  justify-self: left;
+}
+
+#del-section
+{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#del-section p
+{
+  height: 10em;
+  overflow: scroll;
+}
+
+#del-submit
+{
+  height: 2em;
+  width: 50%;
+  justify-self: center;
+}
+
+span.word
+{
+  font-weight: bold;
+}
+
+span.part
+{
+  font-style: italic;
+}
+

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multiplier</title>
+    <meta name="author" content="Jon Beck" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="dom.css" />
+    <script type="text/javascript">
+      // Multiplies two numbers
+      function multiply()
+      {
+        let multiplicand = document.getElementById('multiplicand').value;
+        let multiplier = document.getElementById('multiplier').value;
+        let product = multiplicand * multiplier;
+
+        let answerspan = document.getElementById('answerspan');
+        answerspan.innerHTML = product;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>The Amazing Multiplier</h1>
+
+    <div>
+      <input id="multiplicand" type="number" step="1" autofocus />
+      &Cross;
+      <input id="multiplier" type="number" step="1" />
+      =
+      <span id="answerspan">
+        The answer will appear here
+      </span>
+    </div>
+
+    <p>
+      <button onclick="multiply();">Multiply</button>
+    </p>
+
+  </body>
+</html>

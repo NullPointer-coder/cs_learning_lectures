@@ -1,0 +1,31 @@
+p.normal
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#example1
+{
+  margin: 20px;
+  padding: 20px;
+  padding-left: 100px;
+  background-color: skyblue;
+  background-image: url(rose.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border: 2px dashed red;
+}
+
+#example2
+{
+  margin: 20px;
+  padding: 20px;
+  padding-left: 100px;
+  background-color: skyblue;
+  background-image: url(skullxb.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border: 15px dashed white;
+}

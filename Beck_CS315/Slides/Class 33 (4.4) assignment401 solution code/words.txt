@@ -1,0 +1,4 @@
+fe	noun	A fee is an amount you owe.
+fi	verb	To say, fie on you.
+fo	noun	A foe is an enemy.
+fum	adverb	To do something in a fummy way.

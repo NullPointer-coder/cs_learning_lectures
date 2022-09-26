@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Manage Vocab</title>
+    <meta name="author" content="Jon Beck" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="visibility.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Manage GRE Vocabulary Word File</h1>
+    </header>
+
+    <form method="post">
+      <div id="choose-action">
+        <p class="cb-p">
+          <input type="checkbox" id="add-cb" /><br />
+          <label for="add-cb">Add a Word</label>
+        </p>
+
+        <p class="cb-p">
+          <input type="checkbox" id="del-cb" /><br />
+          <label for="del-cb">Delete Words</label>
+        </p>
+      </div>
+
+      <div id="add-wrapper" class="invisible">
+        <section id="add-section">
+          <label for="word-text">Word</label>
+          <input type="text" id="word-text" size="10" />
+
+          <label for="part-select">Part of Speech</label>
+          <select id="part-select">
+            <option selected disabled>&mdash;choose&mdash;</option>
+            <option value="adjective">Adjective</option>
+            <option value="adverb">Adverb</option>
+            <option value="noun">Noun</option>
+            <option value="verb">Verb</option>
+          </select>
+
+          <label for="defn-text">Definition</label>
+          <input type="text" id="defn-text" size="50" />
+          <button type="submit" id="add-submit">Add</button>
+        </section>
+      </div>
+
+      <div id="del-wrapper" class="invisible">
+        <section id="del-section">
+          <button type="submit" id="del-submit">Delete</button>
+          <p id="word-list">
+            <input type="checkbox" id="wcb01" /><label for="wcb01">
+              <span class="word">abate</span>:
+              <span class="part">verb</span></label><br />
+            <input type="checkbox" id="wcb02" /><label for="wcb02">
+              <span class="word">abeyance</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb03" /><label for="wcb03">
+              <span class="word">abjure</span>:
+              <span class="part">verb</span></label><br />
+            <input type="checkbox" id="wcb04" /><label for="wcb04">
+              <span class="word">abrogate</span>:
+              <span class="part">verb</span></label><br />
+            <input type="checkbox" id="wcb05" /><label for="wcb05">
+              <span class="word">abstruse</span>:
+              <span class="part">adjective</span></label><br />
+            <input type="checkbox" id="wcb06" /><label for="wcb06">
+              <span class="word">acarpous</span>:
+              <span class="part">adjective</span></label><br />
+            <input type="checkbox" id="wcb07" /><label for="wcb07">
+              <span class="word">accretion</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb08" /><label for="wcb08">
+              <span class="word">agog</span>:
+              <span class="part">adjective</span></label><br />
+            <input type="checkbox" id="wcb09" /><label for="wcb09">
+              <span class="word">alloy</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb10" /><label for="wcb10">
+              <span class="word">amortize</span>:
+              <span class="part">verb</span></label><br />
+            <input type="checkbox" id="wcb11" /><label for="wcb11">
+              <span class="word">aplomb</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb12" /><label for="wcb12">
+              <span class="word">apostasy</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb13" /><label for="wcb13">
+              <span class="word">apostate</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb14" /><label for="wcb14">
+              <span class="word">apposite</span>:
+              <span class="part">adjective</span></label><br />
+            <input type="checkbox" id="wcb15" /><label for="wcb15">
+              <span class="word">approbation</span>:
+              <span class="part">noun</span></label><br />
+            <input type="checkbox" id="wcb16" /><label for="wcb16">
+              <span class="word">arabesque</span>:
+              <span class="part">adjective</span></label><br />
+            <input type="checkbox" id="wcb17" /><label for="wcb17">
+              <span class="word">argot</span>:
+              <span class="part">noun</span></label><br />
+          </p>
+        </section>
+      </div>
+    </form>
+    <script src="visibility.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body
+{
+  margin-left: 1in;
+  font-family: sans-serif;
+}
+
+#container
+{
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 1fr);
+  grid-row-gap: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit_row
+{
+  grid-column: 2 / 4;
+}
+
+.label_box
+{
+  grid-column: 1 / 2;
+}
+
+.input_box
+{
+  grid-column: 2 / 6;
+}
+
+#match
+{
+  color: green;
+  font-size: 200%;
+  width: 50%;
+  margin-left: 1in;
+}
+
+#nomatch
+{
+  color: red;
+  font-size: 200%;
+  width: 50%;
+  margin-left: 1in;
+}
+
+label
+{
+  font-weight: bold;
+  width: 1in;
+}

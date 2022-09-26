@@ -1,0 +1,61 @@
+/* Jon Beck */
+
+#mainpage
+{
+  border-radius: 10px;
+  border-width: medium;
+  border-color: black;
+  border-style: solid;
+  font-family: sans-serif;
+}
+
+section
+{
+  border-radius: 10px;
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1
+{
+  font-size: larger;
+  text-align: center;
+}
+
+#add-word-sec
+{
+  width: 20%;
+  float: left;
+}
+
+#view-words-sec
+{
+  float: right;
+  width: 70%;
+}
+
+#words-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+footer
+{
+  clear: both;
+}
+
+.word
+{
+  font-weight: bold;
+}
+
+.part
+{
+  font-style: italic;
+}

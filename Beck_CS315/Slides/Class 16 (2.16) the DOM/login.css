@@ -1,0 +1,49 @@
+body
+{
+  font-family: sans-serif;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+}
+
+header
+{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+fieldset
+{
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  row-gap: 1ex;
+}
+
+aside
+{
+  float: right;
+  width: 15%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+section
+{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#error
+{
+  border: 1px solid red;
+  border-radius: 10px;
+  color: red;
+  text-align: center;
+}
