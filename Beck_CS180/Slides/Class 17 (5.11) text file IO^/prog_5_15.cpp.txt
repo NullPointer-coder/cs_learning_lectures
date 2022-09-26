@@ -1,0 +1,22 @@
+// Gaddis Program 5-15, page 274
+// This program writes data to a file.
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  ofstream output_file;
+  output_file.open("demofile.txt");
+
+  cout << "Now writing data to the file" << endl;
+
+  output_file << "Bach" << endl;
+  output_file << "Beethoven" << endl;
+  output_file << "Mozart" << endl;
+  output_file << "Schubert" << endl;
+
+  output_file.close();
+  cout << "Done." << endl;
+  return 0;
+}

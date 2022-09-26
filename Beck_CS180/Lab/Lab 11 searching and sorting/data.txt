@@ -1,0 +1,70 @@
+// Name and program purpose here
+
+#include <fstream>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+const size_t ARRAY_SIZE = 100;
+
+// function Javadoc and prototypes here
+
+int main()
+{
+  ifstream data_file;
+  data_file.open("data.txt");
+
+  vector<int> values_vector; // a vector of values
+  int values_array[ARRAY_SIZE]; // an array of values
+
+  int value;
+  size_t value_count = 0;
+  while (data_file >> value)
+  {
+    values_array[value_count] = value;
+    value_count++;
+  }
+  data_file.close();
+  cout << "Read " << value_count << " values from data.txt" << endl;
+
+  sort_array(values_array, value_count);
+  copy_array_to_vector(values_array, values_vector, value_count);
+
+  bool done = false;
+  while (!done)
+  {
+    cout << endl << "Enter a value to search for: ";
+    cin >> value;
+    if (value != 0)
+    {
+      size_t position = linear_search_array(values_array, value_count, value);
+      if (position == value_count)
+      {
+        cout << "Value was not found in the array" << endl;
+      }
+      else
+      {
+        cout << "Value is in the array at position " << position << endl;
+      }
+
+      position = binary_search_vector(values_vector, value);
+      if (position == values_vector.size())
+      {
+        cout << "Value was not found in the vector" << endl;
+      }
+      else
+      {
+        cout << "Value is in the vector at position " << position << endl;
+      }
+    }
+    else
+    {
+      done = true;
+    }
+  } // while !done
+
+
+  return 0;
+}
+
+// function definitions here

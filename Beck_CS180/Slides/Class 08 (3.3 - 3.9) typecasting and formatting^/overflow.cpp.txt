@@ -1,0 +1,15 @@
+// Overflow and underflow
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  unsigned short foo = 0;
+  foo -= 1;
+  cout << foo << endl;
+
+  short bar = 32767;
+  bar += 1;
+  cout << bar << endl;
+  return 0;
+}

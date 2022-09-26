@@ -1,0 +1,19 @@
+// Demonstrates random numbers
+// From Gaddis page 129
+// Corrected for type safety
+
+#include<cstdlib>
+#include<ctime>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  unsigned seed = static_cast<unsigned>(time(nullptr));
+  srand(seed);
+
+  cout << rand() << endl;
+  cout << rand() << endl;
+  cout << rand() << endl;
+  return 0;
+}

@@ -1,0 +1,21 @@
+// Gaddis Program 5-22, page 284
+// This program reads numeric data from a file.
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  ifstream input_file;
+  input_file.open("list_of_numbers.txt");
+
+  unsigned int value;
+
+  while (input_file >> value)
+  {
+    cout << value << endl;
+  }
+
+  input_file.close();
+  return 0;
+}

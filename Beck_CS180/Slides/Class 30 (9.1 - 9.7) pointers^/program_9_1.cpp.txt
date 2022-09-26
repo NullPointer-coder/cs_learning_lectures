@@ -1,0 +1,19 @@
+// From Gaddis program 9-1
+// illustrate the address-of and sizeof operators
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x = 2500;
+  double y = 123.4;
+
+  cout << "the address of x is " << &x << ", its contents are " << x <<
+    ", and its size is " << sizeof x << " bytes" << endl;
+
+  cout << "the address of y is " << &y << ", its contents are " << y <<
+    ", and its size is " << sizeof y << " bytes" << endl;
+
+  return 0;
+}

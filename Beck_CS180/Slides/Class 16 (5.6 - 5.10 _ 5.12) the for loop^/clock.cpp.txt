@@ -1,0 +1,29 @@
+// From Gaddis page 266
+// Simulate a digital clock showing hours, minutes, and seconds
+
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const unsigned FIELD_WIDTH = 2;
+  
+  cout << right << setfill('0');
+  for (unsigned hour = 0; hour < 24; hour++)
+  {
+    for (unsigned minute = 0; minute < 60; minute++)
+    {
+      for (unsigned second = 0; second < 60; second++)
+      {
+        cout << setw(FIELD_WIDTH) << hour << ':'
+             << setw(FIELD_WIDTH) << minute << ':'
+             << setw(FIELD_WIDTH) << second << endl;
+      }
+
+      // put a blank line at the minute break
+      cout << endl;
+    }
+  }
+  return 0;
+}

@@ -1,0 +1,19 @@
+// Play with cin
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  unsigned uint_value;
+  double double_value;
+  string string_value;
+  char char_value;
+  
+  cout << "enter an unsigned, double, string, and char: ";
+  cin >> uint_value >> double_value >> string_value >> char_value;
+  cout << "uint_value: " << uint_value << endl;
+  cout << "double_value: " << double_value << endl;
+  cout << "string_value: " << string_value << endl;
+  cout << "char_value: " << char_value << endl;
+  return 0;
+}

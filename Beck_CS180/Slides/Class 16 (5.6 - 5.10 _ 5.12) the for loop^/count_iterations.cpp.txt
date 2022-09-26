@@ -1,0 +1,47 @@
+// count the number of iterations
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  unsigned int count = 0;
+  int start = -5;
+  int stop = 5;
+  
+  for(int i = start; i < stop; i++)
+  {
+    count++;
+  }
+
+  cout << "stop - start = " << stop - start << " and count = " << count << endl;
+
+  count = 0;
+  for(int i = start; i <= stop; i++)
+  {
+    count++;
+  }
+
+  cout << "stop - start = " << stop - start << " and count = " << count << endl;
+
+
+  start = 5;
+  stop = -5;
+  count = 0;
+  for(int i = start; i > stop; i--)
+  {
+    count++;
+  }
+
+  cout << "start - stop = " << start - stop << " and count = " << count << endl;
+
+  
+  count = 0;
+  for(int i = start; i >= stop; i--)
+  {
+    count++;
+  }
+
+  cout << "start - stop = " << start - stop << " and count = " << count << endl;
+
+  return 0;
+}

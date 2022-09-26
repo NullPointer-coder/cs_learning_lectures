@@ -1,0 +1,24 @@
+// a program to show the three main formatting modifications for
+// integer values
+// Jon Beck
+
+#include<iomanip>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  unsigned value1 = 1234;
+  unsigned value2 =  345;
+  unsigned value3 = 3456;
+  unsigned value4 =   67;
+  unsigned value5 =  678;
+  unsigned value6 =  789;
+
+  cout << setw(6) << value1 << setw(6) << value2 << endl;
+  cout << setw(6) << value3 << setw(6) << value4 << endl << endl;
+  cout << left << setfill('.') << setw(6) << value5 << setw(6)
+       << value6 << endl;
+  cout << setw(6) << value1 << setw(6) << value2 << endl;
+  return 0;
+}

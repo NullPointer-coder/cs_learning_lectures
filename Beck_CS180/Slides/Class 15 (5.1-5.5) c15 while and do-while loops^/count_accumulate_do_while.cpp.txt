@@ -1,0 +1,29 @@
+// A program that uses a counter and an accumulator
+// in the context of a do-while loop
+// Get the average of a set of scores entered from the keyboard
+// Jon Beck
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Enter the first act score: ";
+  unsigned act_score;
+  cin >> act_score;
+
+  unsigned count_of_scores = 0;
+  unsigned sum_of_scores = 0;
+
+  do
+  {
+    count_of_scores++;
+    sum_of_scores += act_score;
+    cout << "Enter the next score (0 to quit): ";
+    cin >> act_score;
+  } while (act_score != 0);
+
+  cout << "You entered " << count_of_scores << " scores" << endl;
+  double average = static_cast<double>(sum_of_scores) / count_of_scores;
+  cout << "The average of the scores is " << average << endl;
+  return 0;
+}

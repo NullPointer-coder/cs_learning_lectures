@@ -1,0 +1,59 @@
+// a program to exercise several functions
+// Jon Beck
+// 22 September 2019
+#include <iostream>
+#include <random>
+#include <ctime>
+using namespace std;
+
+/**
+  compute the area of a rectangle
+  @param length the length of the rectangle
+  @param width the width of the rectangle
+  @return the area of a length X width rectangle
+*/
+unsigned get_rectangle_area(unsigned length, unsigned width);
+
+/**
+  get a random value between low and high
+  @param low the smallest random value
+  @param high the largest random value
+  @return a random value between low and high
+*/
+unsigned get_rand_in_range(unsigned low, unsigned high);
+
+int main()
+{
+  const unsigned NUMBER_OF_RECTANGLES = 10;
+  const unsigned MAX_WIDTH = 75;
+  const unsigned MAX_LENGTH = 500;
+
+  srand(static_cast<unsigned>(time(nullptr)));
+
+  cout << "This program displays the area of several rectangles" << endl;
+  cout << "The widths are between 1 and " << MAX_WIDTH
+       << " and the lengths, 1 and " << MAX_LENGTH << endl;
+
+  for (unsigned rectangle = 0; rectangle < NUMBER_OF_RECTANGLES;
+       rectangle++)
+  {
+    unsigned length = get_rand_in_range(1, MAX_LENGTH);
+    unsigned width = get_rand_in_range(1, MAX_WIDTH);
+    unsigned area = get_rectangle_area(length, width);
+
+    cout << "The area of a " << width << " by " << length
+         << " rectangle is " << area << endl;
+  }
+  return 0;
+}
+
+unsigned get_rand_in_range(unsigned low, unsigned high)
+{
+  unsigned value = static_cast<unsigned>(rand()) % (high - low + 1) + low;
+  return value;
+}
+
+unsigned get_rectangle_area(unsigned length, unsigned width)
+{
+  return length * width;
+}

@@ -1,0 +1,24 @@
+// From Gaddis Program 7-12
+// Use foreach loops to access array elements
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const unsigned SIZE = 5;
+  int numbers[SIZE];
+
+  for (auto& value : numbers)
+  {
+    cout << "Enter an integer value: ";
+    cin >> value;
+  }
+
+  cout << "Here are the values you entered:" << endl;
+  for (auto value : numbers)
+  {
+    cout << value << ' ';
+  }
+  cout << endl;
+  return 0;
+}

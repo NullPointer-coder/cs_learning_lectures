@@ -1,0 +1,13 @@
+3
+Fred Flintstone
+70 80 90
+Wilma Flintstone
+100 100 100
+Barney Rubble
+80 82 83
+Betty Rubble
+80 80 95
+Dino Flintstone
+77 88 99
+Bam Bam Flintstone
+0 0 0

@@ -1,0 +1,50 @@
+// Adapted from Gaddis Program 8-1 to use a vector and size_t
+// Implement linear search
+#include <iostream>
+#include <vector>
+using namespace std;
+
+/**
+   the linear search algorithm
+   @param arr an unsorted vector of values
+   @param value the value to search for
+   @return the position of value if found, or the size of the vector
+   if not
+*/
+size_t linear_search(const vector<int>& arr, int value);
+
+int main()
+{
+  vector<int> tests {87, 75, 98, 100, 82};
+
+  size_t results = linear_search(tests, 100);
+
+  if (results == tests.size())
+  {
+    cout << "You did not earn 100 points on any test" << endl;
+  }
+  else
+  {
+    cout << "You earned 100 points on test " << (results + 1) << endl;
+  }
+  return 0;
+}
+
+size_t linear_search(const vector<int>& arr, int value)
+{
+  size_t index = 0;
+  size_t size = arr.size();
+  size_t position = size;
+  bool found = false;
+
+  while (index < size && !found)
+  {
+    if (arr.at(index) == value)
+    {
+      found = true;
+      position = index;
+    }
+    index++;
+  }
+  return position;
+}

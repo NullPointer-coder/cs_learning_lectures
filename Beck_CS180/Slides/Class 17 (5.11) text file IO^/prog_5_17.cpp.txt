@@ -1,0 +1,32 @@
+// Gaddis Program 5-17, page 275
+// This program writes user input to a file.
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  ofstream output_file;
+  output_file.open("numbers.txt");
+
+  cout << "Enter a number: ";
+  int number1;
+  cin >> number1;
+  output_file << number1 << endl;
+
+  cout << "Enter another number: ";
+  int number2;
+  cin >> number2;
+  output_file << number2 << endl;
+
+  cout << "One more time. Enter a number: ";
+  int number3;
+  cin >> number3;
+  output_file << number3 << endl;
+
+  cout << "The numbers were saved to a file." << endl;
+
+  output_file.close();
+  cout << "Done." << endl;
+  return 0;
+}

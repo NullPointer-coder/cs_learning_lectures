@@ -1,0 +1,31 @@
+// A program to illustrate reference parameters
+// Jon Beck
+// 4 October 2018
+
+#include <iostream>
+using namespace std;
+
+void swap_values(unsigned &value_a, unsigned &value_b);
+
+int main()
+{
+  unsigned length = 12;
+  unsigned width = 8;
+
+  cout << "The rectangle is " << length <<
+    " long and " << width << " wide" << endl;
+
+  swap_values(length, width);
+
+  cout << "Now the rectangle is " << length <<
+    " long and " << width << " wide" << endl;
+
+  return 0;
+}
+
+void swap_values(unsigned &value_a, unsigned &value_b)
+{
+  unsigned temp = value_a;
+  value_a = value_b;
+  value_b = temp;
+}

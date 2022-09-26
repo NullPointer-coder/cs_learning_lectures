@@ -1,0 +1,65 @@
+// Adapted from Gaddis Program 8-2 to use a vector and size_t
+// Implement binary search
+#include <iostream>
+#include <vector>
+using namespace std;
+
+/**
+   the iterative binary search algorithm
+   @param array a sorted vector of values
+   @param value the value to search for
+   @return the position of value if found, or the size of the vector
+   if not
+*/
+size_t binary_search(const vector<unsigned>& array, unsigned value);
+
+int main()
+{
+  vector<unsigned> id_nums {101, 142, 147, 189, 207, 222, 234,
+                            289, 296, 310, 319, 388, 394,
+                            417, 429, 447, 521, 536, 600};
+
+  cout << "Enter the number of the employee ID you wish to search for: ";
+  unsigned emp_id;
+  cin >> emp_id;
+
+  size_t results = binary_search(id_nums, emp_id);
+
+  if (results == id_nums.size())
+  {
+    cout << "That number does not exist in the array" << endl;
+  }
+  else
+  {
+    cout << "The ID is found at element " << results <<
+      " in the array" << endl;
+  }
+  return 0;
+}
+
+size_t binary_search(const vector<unsigned>& array, unsigned value)
+{
+  size_t first = 0;
+  size_t last = array.size() - 1;
+  size_t position = array.size();
+  bool found = false;
+
+  while (!found && first <= last && last < array.size())
+  {
+    size_t middle = (first + last) / 2;
+    if (array.at(middle) == value)
+    {
+      found = true;
+      position = middle;
+    }
+    else if (array.at(middle) > value)
+    {
+      last = middle - 1;
+    }
+    else
+    {
+      first = middle + 1;
+    }
+  }
+  return position;
+}

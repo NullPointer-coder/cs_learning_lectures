@@ -1,0 +1,18 @@
+// A program to illustrate getline
+// Jon Beck
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  string name;
+  unsigned age;
+
+  cout << "Please enter your age followed by your full name: ";
+  cin >> age;
+  getline(cin, name);
+
+  cout << "Hello" << name << ", you are " << age << " years old" << endl;
+  return 0;
+}

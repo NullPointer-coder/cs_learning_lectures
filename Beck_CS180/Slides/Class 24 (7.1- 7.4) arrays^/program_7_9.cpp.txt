@@ -1,0 +1,29 @@
+// From Gaddis program 7-9
+// Illustrate out-of-bounds
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const unsigned SIZE = 3;
+  // const unsigned TOO_MANY = 5;
+  const unsigned TOO_MANY = 20;
+  int values[SIZE];
+
+  for (unsigned count = 0; count < TOO_MANY; count++)
+  {
+    cout << "attempting to store in element " << count << endl;
+    values[count] = 100;
+  }
+
+  cout << "after the first for loop" << endl;
+
+  for (unsigned count = 0; count < TOO_MANY; count++)
+  {
+    cout << values[count] << ' ';
+  }
+  cout << endl;
+
+  cout << "after the second for loop" << endl;
+  return 0;
+}

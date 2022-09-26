@@ -1,0 +1,16 @@
+// a program to play with formatting floating point value
+// Jon Beck
+
+#include<iomanip>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  double foo = 1234598768976.0;
+  for (int i = 1; i < 12; i++)
+  {
+    cout << i << " " << fixed << setprecision(i) << foo << endl;
+  }
+  return 0;
+}

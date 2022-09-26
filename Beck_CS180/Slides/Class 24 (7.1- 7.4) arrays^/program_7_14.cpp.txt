@@ -1,0 +1,32 @@
+// From Gaddis program 7-14
+// This program reads data from a file into an array
+// We assume the file will never have more than 100 data values
+
+#include <fstream>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const unsigned ARRAY_SIZE = 100;
+  int numbers[ARRAY_SIZE];
+
+  unsigned count = 0;
+  ifstream input_file;
+  input_file.open("data.txt");
+
+  while (count < ARRAY_SIZE && input_file >> numbers[count])
+  {
+    count++;
+  }
+
+  input_file.close();
+
+  cout << "The numbers are: ";
+  for (unsigned index = 0; index < count; index++)
+  {
+    cout << numbers[index] << ' ';
+  }
+  cout << endl;
+  return 0;
+}

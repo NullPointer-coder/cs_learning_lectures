@@ -1,0 +1,31 @@
+// From Gaddis program 9-11
+// Illustrate pass-by-pointer
+// You would never actually write a program like this in C++
+// This is really C
+#include <iostream>
+using namespace std;
+
+void get_number(int* input);
+void double_value(int* value);
+
+int main()
+{
+  int number;
+
+  get_number(&number);
+  double_value(&number);
+
+  cout << "the value you entered, doubled, is " << number << endl;
+  return 0;
+}
+
+void get_number(int* input)
+{
+  cout << "enter an integer: ";
+  cin >> *input;
+}
+
+void double_value(int* value)
+{
+  *value *= 2;
+}

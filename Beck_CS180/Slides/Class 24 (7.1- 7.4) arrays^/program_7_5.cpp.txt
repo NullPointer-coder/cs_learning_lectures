@@ -1,0 +1,28 @@
+// From Gaddis Program 7-5
+// Use an array of twelve characters to store the first twelve
+// letters of the alphabet. The ASCII codes of the characters
+// are displayed. Just for fun, enhance Gaddis' program to show
+// both hex and decimal values.
+//
+// hex and dec are NOT defined in iomanip, so you don't need that
+// library to use them. they are sticky.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const unsigned NUMBER_OF_LETTERS = 12;
+  char letters[NUMBER_OF_LETTERS] {'A', 'B', 'C', 'D', 'E', 'F',
+                                   'G', 'H', 'I', 'J', 'K', 'L'};
+
+  cout << "Char\tDecimal\tHex\n";
+  cout << "----\t-------\t---\n";
+
+  for (unsigned index = 0; index < NUMBER_OF_LETTERS; index++)
+  {
+    cout << letters[index] << "\t";
+    cout << dec << static_cast<unsigned>(letters[index]) << "\t";
+    cout << hex << static_cast<unsigned>(letters[index]) << "\n";
+  }
+  return 0;
+}

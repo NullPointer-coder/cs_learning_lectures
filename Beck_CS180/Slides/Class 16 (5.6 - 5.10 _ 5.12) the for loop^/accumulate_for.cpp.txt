@@ -1,0 +1,30 @@
+// A program to illustrate a counter and an accumulator in a for loop
+// Get the average of a set of scores entered from the keyboard
+// Jon Beck
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  cout << "How many ACT scores do you wish to enter? ";
+
+  unsigned number_of_scores;
+  cin >> number_of_scores;
+
+  unsigned sum_of_scores = 0;
+
+  for (unsigned score_number = 1; score_number <= number_of_scores;
+       score_number++)
+  {
+    cout << "Enter score number " << score_number << ": ";
+    unsigned act_score;
+    cin >> act_score;
+
+    sum_of_scores += act_score;
+  }
+
+  double average = static_cast<double>(sum_of_scores) / number_of_scores;
+  cout << "The average of the scores is " << average << endl;
+  return 0;
+}
