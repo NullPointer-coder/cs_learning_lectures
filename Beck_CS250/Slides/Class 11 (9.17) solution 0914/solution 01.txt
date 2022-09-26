@@ -1,0 +1,31 @@
+#!/bin/bash
+# Jon Beck
+# strip trailing spaces from a file, leaving the original unchanged
+# in a file with ".orig" appended to the original name
+
+if [[ ! -f "$1" ]]
+then
+  1>&2 echo "file not found: $1"
+  exit 1
+fi
+
+mv "$1" "$1.orig"
+
+IFS=''
+cat "$1.orig" | while read line # read each line, preserving spaces
+do
+  while echo "$line" | grep -q " $" # loop if there is trailing space
+  do
+    strlen=${#line} # line length
+    if [[ $strlen > 1 ]]
+    then
+      position=$((strlen - 1)) # position before end of line
+      line=$(echo "$line" | cut -c-$position ) # cut one character
+    else
+      line=""
+    fi
+  done
+  echo "$line" >> "$1" # line with no trailing spaces
+done
+
+exit 0

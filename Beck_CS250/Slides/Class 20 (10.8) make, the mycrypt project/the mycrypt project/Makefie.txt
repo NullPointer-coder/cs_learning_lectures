@@ -1,0 +1,24 @@
+CC=clang
+CFLAGS=-std=c89 -Weverything -pedantic-errors
+OBJECTS=main.o options.o mycrypt.o
+
+all: mycrypt
+
+mycrypt: $(OBJECTS)
+	$(CC) $(CFLAGS) -o mycrypt $(OBJECTS)
+
+main.o: main.c mycrypt.h options.h
+	$(CC) $(CFLAGS) -Wno-padded -c main.c
+
+mycrypt.o: mycrypt.h mycrypt.c
+	$(CC) $(CFLAGS) -c mycrypt.c
+
+options.o: options.c options.h mycrypt.h
+	$(CC) $(CFLAGS) -Wno-padded -c options.c
+
+clean:
+	rm -f *.o *~ mycrypt
+
+test: mycrypt
+	@echo Running tests
+	./runtests.sh

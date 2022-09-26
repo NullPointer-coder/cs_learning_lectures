@@ -1,0 +1,27 @@
+#include "mycrypt.h"
+
+void encrypt(FILE* input_file, uint8_t key)
+{
+  int character;
+
+  while ((character = getc(input_file)) != EOF)
+  {
+    uint8_t value = (uint8_t)character;
+    value += key;
+    character = (int)value;
+    putchar(value);
+  }
+}
+
+void decrypt(FILE* input_file, uint8_t key)
+{
+  int character;
+
+  while ((character = getc(input_file)) != EOF)
+  {
+    uint8_t value = (uint8_t)character;
+    value -= key;
+    character = (int)value;
+    putchar(value);
+  }
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -e "\nTesting missing first switch"
+./mycrypt -5 roses.txt
+
+echo -e "\nTesting missing second switch"
+./mycrypt -e roses.txt
+
+echo -e "\nTesting good run"
+./mycrypt -e -120 roses.txt | ./mycrypt -d -120

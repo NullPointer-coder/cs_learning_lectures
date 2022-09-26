@@ -1,0 +1,36 @@
+/*
+ * command line parser, written for the mycrypt system
+ * Jon Beck
+ */
+
+#ifndef OPTIONS_H
+#define OPTIONS_H
+#include <stdint.h>
+
+#define MAX_FILE_NAME 255
+
+typedef struct
+{
+  unsigned direction;
+  uint8_t key;
+  char filename[MAX_FILE_NAME];
+  unsigned direction_error;
+  unsigned key_error;
+} Options;
+
+/**
+ * parse the command line, putting the results (and any error
+ * conditions detected) into the return struct
+ * @param argc the number of argument strings provided
+ * @param argv the array of strings to be parsed
+ */
+Options parse_command_line(size_t argc, const char** argv);
+
+/**
+ * for debugging purposes, dump the contentes of an Options struct
+ * to stdout.  not really designed for production use
+ * @param options the struct whose contents to dump
+ */
+void dump_options(Options options);
+
+#endif

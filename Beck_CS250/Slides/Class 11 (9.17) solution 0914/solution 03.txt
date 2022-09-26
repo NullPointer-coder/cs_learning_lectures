@@ -1,0 +1,25 @@
+#!/bin/bash
+# Jon Beck
+# use md5 to detect duplicate files
+
+[[ -d $1 ]] && cd "$1" # if $1 is a directory, cd into it
+                       # otherwise, stay here
+index_outer=0
+for file1 in $(ls *)
+do
+  ((index_outer++))
+  index_inner=$((index_outer + 1))
+
+  for file2 in $(echo * | cut -d" " -f"$index_inner-")
+  do
+    # check for file2 being a regular file omitted
+    md1=$(cat $file1 | md5sum)
+    md2=$(cat $file2 | md5sum)
+    if [[ "$md1" = "$md2" ]]
+    then
+      echo "$file1 and $file2 are duplicates"
+    fi
+  done
+done
+
+exit 0

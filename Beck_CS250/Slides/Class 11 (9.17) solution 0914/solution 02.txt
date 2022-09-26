@@ -1,0 +1,33 @@
+#!/bin/bash
+# sum the values of a column of a tab-delimited csv file
+
+if [[ ! -f "$1" ]]
+then
+  exit 1
+fi
+
+if [[ $# -ne 2 ]]
+then
+    exit 2
+fi
+
+cut_column=$(($2 + 1))
+
+sum=0
+for value in $(cat $1 | cut -f$cut_column)
+do
+    if [[ -z $value ]]
+    then
+        exit 3
+    fi
+
+    non_digit=$(echo "$value" | grep -Ev "^[0-9]+$")
+
+    if [[ $non_digit ]]
+    then
+        exit 4
+    fi
+    sum=$((sum + value))
+done
+
+echo $sum

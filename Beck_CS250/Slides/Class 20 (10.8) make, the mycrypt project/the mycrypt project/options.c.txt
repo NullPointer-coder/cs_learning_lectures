@@ -1,0 +1,82 @@
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+#include "options.h"
+#include "mycrypt.h"
+
+Options parse_command_line(size_t argc, const char** argv)
+{
+  Options options = {ENCRYPT, 0, "", 0, 0};
+  unsigned rawkeyvalue;
+
+  if (argc < 3)
+  {
+    options.direction_error = 1;
+    options.key_error = 1;
+    return options;
+  }
+
+  if (strlen(argv[1]) != 2)
+  {
+    options.direction_error = 1;
+    return options;
+  }
+
+  if (argv[1][0] != '-' || !(argv[1][1] == 'd' || argv[1][1] == 'e'))
+  {
+    options.direction_error = 1;
+    return options;
+  }
+
+  if (argv[1][1] == 'd')
+  {
+    options.direction = DECRYPT;
+  }
+
+  if (strlen(argv[2]) < 2 || argv[2][0] != '-')
+  {
+    options.key_error = 1;
+    return options;
+  }
+
+  if (!isdigit(argv[2][1]))
+  {
+    options.key_error = 1;
+    return options;
+  }
+
+  rawkeyvalue = (unsigned)atoi(&argv[2][1]);
+  if (rawkeyvalue <= UINT8_MAX)
+  {
+    options.key = (uint8_t)rawkeyvalue;
+  }
+  else
+  {
+    options.key_error = 1;
+    return options;
+  }
+
+  if (argc == 4)
+  {
+    if (strlen(argv[3]) < MAX_FILE_NAME)
+    {
+      strcpy(options.filename, argv[3]);
+    }
+    else
+    {
+      strncpy(options.filename, argv[3], MAX_FILE_NAME);
+      options.filename[MAX_FILE_NAME - 1] = '\0';
+    }
+  }
+
+  return options;
+}
+
+void dump_options(Options options)
+{
+  printf("direction: %u\n", options.direction);
+  printf("key:       %u\n", options.key);
+  printf("filename:  %s\n", options.filename);
+  printf("dir_err:   %u\n", options.direction_error);
+  printf("key_err:   %u\n", options.key_error);
+}

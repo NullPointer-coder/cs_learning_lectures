@@ -1,0 +1,32 @@
+/*
+ * encryption and decryption routines, written for the mycrypt system
+ * Jon Beck
+ */
+
+#ifndef MYCRYPT_H
+#define MYCRYPT_H
+#include <stdio.h>
+#include <stdint.h>
+
+/**
+ * flags available to determine whether we are running in
+ * encrypt or decrypt mode
+ */
+#define ENCRYPT 0
+#define DECRYPT 1
+
+/**
+ * encrypt a stream using the given key, with results going to stdout
+ * @param input_file the open stream
+ * @param key the encryption key to use
+ */
+void encrypt(FILE* input_file, uint8_t key);
+
+/**
+ * decrypt a stream using the given key, with results going to stdout
+ * @param input_file the open stream
+ * @param key the encryption key to use
+ */
+void decrypt(FILE* input_file, uint8_t key);
+
+#endif

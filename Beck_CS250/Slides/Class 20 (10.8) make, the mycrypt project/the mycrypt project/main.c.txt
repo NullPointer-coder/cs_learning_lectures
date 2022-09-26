@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "options.h"
+#include "mycrypt.h"
+
+void usage(const char* command);
+
+int main(int argc, const char** argv)
+{
+  Options options = parse_command_line((size_t)argc, argv);
+  FILE* input_file;
+
+  #ifdef DEBUG
+  dump_options(options);
+  #endif
+
+  if (options.direction_error || options.key_error)
+  {
+    usage(argv[0]);
+    return 1;
+  }
+
+  if (options.filename[0] == '\0')
+  {
+    if (options.direction == ENCRYPT)
+    {
+      encrypt(stdin, options.key);
+    }
+    else
+    {
+      decrypt(stdin, options.key);
+    }
+  }
+  else
+  {
+    input_file = fopen(options.filename, "r");
+    if (input_file == NULL)
+    {
+      fprintf(stderr, "Cannot open %s\n", options.filename);
+      return 2;
+    }
+    else
+    {
+      if (options.direction == ENCRYPT)
+      {
+        encrypt(input_file, options.key);
+      }
+      else
+      {
+        decrypt(input_file, options.key);
+      }
+      fclose(input_file);
+    }
+  }
+  return 0;
+}
+
+void usage(const char* command)
+{
+  fprintf(stderr, "Usage: %s -<d|e> -<key> [filename]\n", command);
+}
