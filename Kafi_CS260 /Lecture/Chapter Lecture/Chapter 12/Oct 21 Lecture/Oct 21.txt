@@ -1,0 +1,1 @@
+Oct 21 Lecture: exception self check questions/answers, try/finally statements, application handling input errors, Chapter 12: discover classes: nouns as classes and verbs as methods, CRC Card method

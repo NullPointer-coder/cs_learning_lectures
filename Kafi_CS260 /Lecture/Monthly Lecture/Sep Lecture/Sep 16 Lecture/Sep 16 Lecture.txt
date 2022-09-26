@@ -1,0 +1,1 @@
+Sep 16 Lecture: inheritance, inheritance in UML, terminology, extends keyword, accessing super class constructor/methods, this and super objects, protected access specifier, usefulness of override annotation

@@ -1,0 +1,2 @@
+Sep 2 Lecture: do-loop (input validation), nested loop (rows and columns), random number generation, array declaration/initialization, array references, 
+array as parameter, array of parallel array vs objects, enhanced for loop, maximum/swapping values, copy array, resize array, 2D array, ArrayLists: declaration, get, set, add

@@ -1,0 +1,2 @@
+Nov 11 Lecture: backtracking maze with stack, generic class intro, type parameters, type parameters and safety, implementing generic class, class pair, generic method, constraining type variables,
+ - Alternative Formats 

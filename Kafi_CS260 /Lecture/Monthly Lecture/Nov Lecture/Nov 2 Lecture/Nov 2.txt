@@ -1,0 +1,1 @@
+Nov 2 Lecture listDemo program, sets introwhen to usefeature, hashCodeequals methods, retainAlladdAllremoveAll methods, contains method, spellcheck example, maps TreeMapHashMap, keySet method, putget methods

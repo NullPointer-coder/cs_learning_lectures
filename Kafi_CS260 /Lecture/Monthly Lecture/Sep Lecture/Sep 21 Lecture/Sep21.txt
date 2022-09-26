@@ -1,0 +1,1 @@
+Sep 21 Lecture: protected keyword, override annotation, override rules for final/static methods, Object: cosmic superclass, overloading equals method, abstract method, polymorphism with Student/Employee objects (example attached)

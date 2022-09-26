@@ -1,0 +1,1 @@
+Dec 2 Lecture: JOptionPane dialogs, multiple event handling, TextAreas and JScrollPane, Java coordinate system, graphics context/objects, controlling colors, color chooser, font customization, drawing lines/rectangles/ovals, drawing polygons, animating drawing objects

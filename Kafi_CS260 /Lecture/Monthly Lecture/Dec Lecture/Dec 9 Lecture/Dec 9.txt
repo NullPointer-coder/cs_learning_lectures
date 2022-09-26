@@ -1,0 +1,1 @@
+Dec 9 Lecture: intro to Design Patterns (DP), motivation, DP advantages, DP types, creational patterns: factory/abstract factory/builder/singleton patterns, structural patterns: adapter, iterator patterns

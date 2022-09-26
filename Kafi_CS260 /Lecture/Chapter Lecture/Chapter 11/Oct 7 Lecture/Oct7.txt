@@ -1,0 +1,1 @@
+Oct 7 Lecture: processing text input using delimiter: reading char, reading only texts, processing line of text from a file: using methods in Character class, scanning a string, convert string to number, avoiding errors, formatting output, command line arguments: demo, exception handling: throwing and catching various exceptions

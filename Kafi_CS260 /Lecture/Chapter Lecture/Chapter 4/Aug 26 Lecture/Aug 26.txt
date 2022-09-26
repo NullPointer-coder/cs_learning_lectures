@@ -1,0 +1,1 @@
+Aug 26 Lecture: IntelliJ IDEA, how to export a project as jar, arithmetic operator, inc/dec operators, integer division, power and root, writing arithmetic expression, math functions, float to int casting, round function, reading values /w Scanner, formatting output /w printf, string: input, charAt, concatenation, substring, length

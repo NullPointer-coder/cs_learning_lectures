@@ -1,0 +1,1 @@
+Oct 26 Lecture: class dependency/aggregation/inheritance, relationship symbols, multiplicities/adornment, aggregation vs composition, applying these tools for print invoice

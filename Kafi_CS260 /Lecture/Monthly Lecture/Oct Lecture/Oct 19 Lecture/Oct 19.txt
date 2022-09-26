@@ -1,0 +1,1 @@
+Oct 19 Lecture: checked exceptions, try with resources, designing custom exception classes

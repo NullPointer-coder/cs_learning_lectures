@@ -1,0 +1,2 @@
+Sep 7 Lecture: ArrayList: remove method, using with Enhanced for loop, copying ArrayList variables, wrapper class, array vs ArrayList, interface of a class, instance variables, encapsulation, constructor, javaDoc comments — demo, unit testing your class
+ - Alternative Formats 

@@ -1,0 +1,1 @@
+Nov 4 Lecture: immutable class (IC) background, usage, examples, steps to create IC, passing mutable objects to IC, returning mutable objects from IC

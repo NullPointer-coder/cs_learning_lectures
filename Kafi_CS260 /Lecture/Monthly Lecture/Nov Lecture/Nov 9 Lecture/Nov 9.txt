@@ -1,0 +1,2 @@
+Nov 9 Lecture: working with maps, updating map entries with merge, putIfAbsent method, choosing collection, hash functions, stacks, queue, priority queue, stack/queue application, evaluating Algebric expression with two stacks
+ - Alternative Formats 

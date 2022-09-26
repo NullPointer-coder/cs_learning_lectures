@@ -1,0 +1,1 @@
+Oct 28 Lecture: collection framework overview, the collection/map interface, collection variable declaration, element addition, diamond syntax, linked list concept, linked list object declaration/addition, ListIterator: next/previous/hasNext/hasPrevious/set/remove functions

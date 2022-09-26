@@ -1,0 +1,1 @@
+Oct 5 Lecture: lambda expression review: importance/use, inner classes, mock objects in collaboration, reading files using Scanner object, reading a series of double values, FileNotFoundException, reading and writing files example with Scanner and PrintWriter objects, importance of hasNext(), hasNextDouble in file loop construction
