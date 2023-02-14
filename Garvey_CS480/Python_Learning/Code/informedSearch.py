@@ -59,7 +59,7 @@ class InformedSearch(Search):
                         else:
                             self.q.enqueue(n)
         return None
-            
+
 
 class InformedProblemState(ProblemState):
     """
