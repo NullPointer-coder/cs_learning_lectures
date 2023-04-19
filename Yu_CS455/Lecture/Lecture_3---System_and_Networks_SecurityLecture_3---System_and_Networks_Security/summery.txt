@@ -1,0 +1,15 @@
+[Part 1 Web server reconnaissance and hacking]
+ 	Lect_3 System and Networks Security (Part1).pdf
+	Lect_3 System and Networks Security (Part2).pdf
+
+[Part 2 SSH reconnaissance and hacking]
+	Lect_3 System and Networks Security (Part3).pdf
+	Lect_3 System and Networks Security (Part4).pdf
+
+[Part 3 Database reconnaissance and hacking]
+	Lect_3 System and Networks Security (Part5).pdf
+	Lect_3 System and Networks Security (Part6).pdf
+	Lect_3 System and Networks Security (Part7).pdf
+
+[Part 4 XSS Hacking Explained]
+	Lect_3 System and Networks Security (Part8).pdf

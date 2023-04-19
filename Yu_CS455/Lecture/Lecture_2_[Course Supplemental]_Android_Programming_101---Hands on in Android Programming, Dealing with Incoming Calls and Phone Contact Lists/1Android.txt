@@ -1,0 +1,42 @@
+Dear all,
+The 1st Part, Android Programming 101 is repeated, as I had introduced earlier in the previous semester --- CS430 Database System
+Basically, it is not all the students in this class used to be in my CS430, previously.
+The 2nd Part, is the hands-on in dealing with incoming calls in Android. (including phone numbers)
+The 3rd Part, is the hands-on in reading the contacts in the Android.
+The 4th Part, is the hands-on in reading the SMS in the Android.
+The 5th Part, is the hands-on in sending notifications in Android.
+The purpose of the 1st part is to learn the fundamental programming skills.
+The 2nd, 3rd and 4th part are related to "Android Telephony".
+The purpose of the 5th part is that, after a couple of "matches" from "SMS" or "incoming call numbers",
+if we find "something is wrong", we need to send a "warning" to phone users.
+We try to build up a simple and easy "signature based" App to detect the "unwanted calls",
+as well as SPAM / SCAM text messages
+ 
+[Part 1 Android Programming 101]
+Android Programming 101 (Part1).pdf
+Android Programming 101 (Part2).pdf
+Android Programming 101 (Appendix).pdf
+Android Programming 101_Tools (Part1) (emulator and screen mirroring).pdf
+Android Programming 101_Tools (Part2) (emulator and screen mirroring).pdf
+ActivityJumps.zip
+ActivityAndFragment.zip
+[Part 2 Recognizing incoming calls]
+Recognizing incoming calls.pdf
+PhoneStateListener.zip
+IncomingCallStatus.zip
+[Part 3 Reading the contacts]
+Reading the contacts.pdf
+ContactsPhoneNumber.zip
+[Part 4 Reading the SMS]
+ReadSMS.zip
+Reading the SMS.pdf
+[Part 5 Send the Notifications]
+SendNotification.zip
+Send Notification.pdf
+Android Notification.Builder vs NotificationCompat.Builder. Differences?
+https://stackoverflow.com/questions/39749482/android-notification-builder-vs-notificationcompat-builder
+[Part 6 NumVerify]
+A RESTful API can be used in Android Apps to check someone's phone number
+It can give you detail info. about this number. i.e. Type: landline or mobile phone; Location: Kirksville
+NumVerify.pdf
+NumVerify.zip
