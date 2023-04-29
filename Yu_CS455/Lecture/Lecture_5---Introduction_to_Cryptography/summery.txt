@@ -1,0 +1,6 @@
+[Part1 Six cryptography concepts every developer should know]
+  Lect_5 Six Cryptography Concepts Every Developer Should Know.pdf
+  6 files in NodeJS (javascript) is attached
+[Part2 Cryptography All-in-one A Full Introduction]
+  Lect_5 Cryptography All-in-one A Full Introduction (Part1).pdf
+  Lect_5 Cryptography All-in-one A Full Introduction (Part2).pdf

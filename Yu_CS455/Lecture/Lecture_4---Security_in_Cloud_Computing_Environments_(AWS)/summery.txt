@@ -1,0 +1,7 @@
+[Part 1 Fundamentals of Cloud Computing. AWS EC2]
+  Lect_4 Fundamentals of Cloud Computing (Part1).pdf
+  Lect_4 Fundamentals of Cloud Computing (Part2).pdf
+  Lect_4 Fundamentals of Cloud Computing (Part3).pdf
+[Part 2 Amazon EC2 Instance protections with Security Groups and Network Access Control List]
+  Lect_4 Amazon EC2 Instances with Security Groups Explained.pdf
+  Lect_4 Block Hackers on AWS EC2 with Network Access Control List.pdf
